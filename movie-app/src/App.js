@@ -46,10 +46,10 @@ function App() {
         setState((prevState) => {return {...prevState, selected: {}}})
     }
   return (
-    <div className="main-wrapper w-100 d-flex flex-column align-items-center min-vh-100">
+    <div className="main-wrapper w-100 d-flex flex-column align-items-center min-vh-100 ">
         {typeof state.selected.Title !== "undefined" ? <Detail selected={state.selected} close={close}/> : 
       <header className="w-100 text-center text-white mt-5">
-        <h1><b>Movie Craze</b></h1>
+        <h1><b>Movizz</b></h1>
         <Search handleInput={handleInput} SearchResult={SearchResult} />
         <div className="container">
             <div className="row">
@@ -68,6 +68,8 @@ function App() {
   )
 }
 export default App;
+
+
 
 
 
